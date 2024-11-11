@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Protocolo.Nerd</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="cabeçalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="#">Assados</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#">Cozidos</a>
+                    </li><li class="lista-menu__item">
+                        <a href="#">Frito</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#">Na brasa</a>
+                    </li>
+                </ul>   
+                <img src="img/Logo.webp" alt="Logo do site" class="container__imagem">
+                <h1 class="container__titulo"><b class="container__titulo--negrito">Protocolo.</b>Cozinha</h1>
+            </div>
+
+            <ul class="opçoes">
+                <input type="checkbox" id="opçoes-menu" class="opçoes__botao" />
+                <label for="opçoes-menu" class="opçoes__rotulo">
+                  <li class="opçoes__item">Categorias</li>
+                </label>
+              
+                <ul class="lista-menu">
+                  <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Assado</a>
+                  </li>
+                  <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Cozido</a>
+                  </li>
+                  <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Frito</a>
+                  </li>
+                  <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Na brasa</a>
+                  </li>
+                </ul>
+                <li class="opçoes__item"><a href="#" class="opçoes__link">Favoritos</a></li>
+                <li class="opçoes__item">
+                  <a href="#" class="opçoes__link">Minhas receitas</a>
+                </li>
+              </ul>
+
+            <div class="container">
+                <a href="#">
+                    <img src="img/Favoritoss.webp" alt="Meus Favoritos" class="container__imagem container__imagem-transparente">
+                </a>
+                <a href="#" class="container__link">
+                    <img src="img/sacolas.webp" alt="Carrinho de Compras" class="container__imagem">
+                    <p class="container__texto">Minha sacola</p>
+                </a>
+                <a href="#" class="container__link">
+                    <img src="img/Usuario.webp" alt="Meu perfil" class="container__imagem"> 
+                    <p class="container__texto">Meu perfil</p>
+                </a>
+            </div>
+            
+        </header>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nosso catálogo de receitas o que precisa para o seu momento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será seu proximo jogo?">
+        </section>
+        <section class="carrosel">
+            <h2 class="carrosel__titulo">Para uma tarde ensolara</h2>
+            <!-- Slider main container -->
+            <div class="carrosel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/bolo de limao.webp" alt="Bolo de limão"></div>
+                        <div class="swiper-slide"><img src="img/pao de mel.webp" alt="Pão de mel"></div>
+                        <div class="swiper-slide"><img src="img/pao doce.webp" alt="Pão doce"></div>
+                        <div class="swiper-slide"><img src="img/sorvete.webp" alt="Sorvete"> </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="card">
+                    <!-- 1ª linha -->
+                    <div class="card__descrição">
+                        <!-- 1ª coluna -->
+                        <div class="descrição">
+                            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descrição__titulo-livro">Pate de frango</h2> 
+                            <p class="descrição__texto">Se delicie com um bom pate de frango com pão, para ficar melhor tome uma coquinha junto!</p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="img/pate.webp" class="descrição__imagem">
+                    </div>  
+                    <!-- 2º linha -->
+                    <div class="card__botões">
+                        <!-- 1ª coluna -->
+                        <ul class="botões">
+                            <li class="botões_item"><img src="img/Favoritoss.webp" alt="Favoritar livro"></li>
+                            <li class="botões_item"><img src="img/sacolas.webp" alt="Adicionar no carrinho de compras" </li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a href="#" class="botões__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="carrosel">
+            <h2 class="carrosel__titulo">Mais vendidos</h2>
+            <!-- Slider main container -->
+             <div class="carrosel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/pao com mortadela.webp" alt="Jogo"></div>
+                        <div class="swiper-slide"><img src="img/feijoada.webp" alt="Jogo"></div>
+                        <div class="swiper-slide"><img src="img/bolo de limao.webp" alt="Jogo"></div>
+                        <div class="swiper-slide"><img src="img/linguiça.webp" alt="Jogo"></div>
+                        <div class="swiper-slide"><img src="img/pao de mel.webp" alt="Jogo"></div>
+                        <div class="swiper-slide"><img src="img/macararo com salsicha.webp" alt="Jogo"></div>
+                        <div class="swiper-slide"><img src="img/sorvete.webp" alt="Jogo"></div>
+                    </div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="card">
+                    <!-- 1ª linha -->
+                    <div class="card__descrição">
+                        <!-- 1ª coluna -->
+                        <div class="descrição">
+                            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descrição__titulo-livro">Pave de chocolate</h2> 
+                            <p class="descrição__texto">Um pave de chocolate é muito bom depois de um almoço!</p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="img/pave.webp" class="descrição__imagem">
+                    </div>
+                    <!-- 2º linha -->
+                    <div class="card__botões">
+                        <!-- 1ª coluna -->
+                        <ul class="botões">
+                            <li class="botões_item"><img src="img/Favoritoss.webp" alt="Favoritar livro"></li>
+                            <li class="botões_item"><img src="img/sacolas.webp" alt="Adicionar no carrinho de compras"</li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a href="#" class="botões__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulo">Receitas mais procuradas</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item"><a href="#" class="topicos__link">Fricasse de frango</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Lasanha a bolanhesa</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Lasanha de frango</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Torta de frango</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Pave de chocolate</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Massa de pizza</a></li>
+            </ul>
+        </section>
+        <section class="contato">
+            <div class="contato__descriçao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Novas Receitas, novas atualizações sobre o mundo da gastronimia!</p>
+            </div>
+            <input type="email" placeholder="Cadastre o seu email" class="contato__email">
+        </section>
+
+        <hr />
+
+        <footer class="rodape">
+            <h2 class="rodape__titulo">Protocolo.Nerd</h2>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 3,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+            }); 
+        </script>
+    </body>
+</html>
